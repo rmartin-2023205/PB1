@@ -1,0 +1,854 @@
+{
+	"info": {
+		"_postman_id": "7ea29d84-76b8-415f-8afb-a7486d397f80",
+		"name": "VENTA-ONLINE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37957136"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "name",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "surname",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "username",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "email",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "phone",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "NIT",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "profilePicture",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Diego",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Medina",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "dmedina",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dmedina-2023203@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Dmedina23_",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "02234561",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/user",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLogin",
+									"value": "rmartin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Zldzld12_",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/user/67c65db17583bbaf087cd5ea",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"67c65db17583bbaf087cd5ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Alberto",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/user/67c65db17583bbaf087cd5ea",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"67c65db17583bbaf087cd5ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/user/67c65f993c66b35c497b38ab",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"67c65f993c66b35c497b38ab"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "GetCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2636/category",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Muebles",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/category/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/category/67c6604f3c66b35c497b38b4",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"67c6604f3c66b35c497b38b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Computo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/category/67c661a53c66b35c497b38ba",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"67c661a53c66b35c497b38ba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiUmljYXJkbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1Mzg2MCwiZXhwIjoxNzQxMDY0NjYwfQ.YJr7Y7XpHiFA8X7MnJeMa48oxBV_QOLHrjQ_rpXv3zY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2636/category/67c6604f3c66b35c497b38b4",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"67c6604f3c66b35c497b38b4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "AddProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Razercobra",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "MouseGamer",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300.00",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "67c661a53c66b35c497b38ba",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/product/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProduct",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/product/67c674eedf37e8f3e03ddcad",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"67c674eedf37e8f3e03ddcad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Razer Cobra Pro",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/product/67c674eedf37e8f3e03ddcad",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"67c674eedf37e8f3e03ddcad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/product/67c674eedf37e8f3e03ddcad",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"67c674eedf37e8f3e03ddcad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ShopCar",
+			"item": [
+				{
+					"name": "addShoppingCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "product",
+									"value": "67c67635df37e8f3e03ddcb5",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/shop/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"shop",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getShopCar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/shop/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"shop",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteShopCar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/shop/67c67635df37e8f3e03ddcb5",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"shop",
+								"67c67635df37e8f3e03ddcb5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateShopCart",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA1OTI3OCwiZXhwIjoxNzQxMDcwMDc4fQ.3FzEJzwib-rvkULaSPxQGhb9MvSCk85iDvFFg8Jh7Wk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/shop/67c67635df37e8f3e03ddcb5",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"shop",
+								"67c67635df37e8f3e03ddcb5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "addPurchase",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA2MDgzNywiZXhwIjoxNzQxMDcxNjM3fQ.ik_vLLX5S-spo1V9UTC7S5mzpFw_Du5POyWGhDS98SQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "rmartin",
+									"type": "text"
+								},
+								{
+									"key": "product",
+									"value": "Razer Cobra",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "subtotal",
+									"value": "600",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "600",
+									"type": "text"
+								},
+								{
+									"key": "paymentMethod",
+									"value": "Visa",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2025-03-03",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/buy/purchase",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"buy",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "historial",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NWRiMTc1ODNiYmFmMDg3Y2Q1ZWEiLCJ1c2VybmFtZSI6InJtYXJ0aW4iLCJuYW1lIjoiQWxiZXJ0byIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0MTA2MDgzNywiZXhwIjoxNzQxMDcxNjM3fQ.ik_vLLX5S-spo1V9UTC7S5mzpFw_Du5POyWGhDS98SQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "paymentMethod",
+									"value": "Credit Card",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/buy/historial",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"buy",
+								"historial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generadorDeFactura",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorizathion",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NTMzNWRmNjFmNDQ2ZTRlYjAyZWEiLCJ1c2VybmFtZSI6InN2ZWxpeiIsIm5hbWUiOiJTZWJhc3RpYW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDEwNTA2OTksImV4cCI6MTc0MTA2MTQ5OX0.yjz1YFp75CW9EYZ0TtsHw9TYNw_ir-cOPMc0Ssx-5to",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/buy/factura/67c67635df37e8f3e03ddcb5",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"buy",
+								"factura",
+								"67c67635df37e8f3e03ddcb5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
